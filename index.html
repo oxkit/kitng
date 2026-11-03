@@ -15,10 +15,7 @@
 <meta property="og:site_name" content="kit.ng">
 <meta property="og:image" content="https://kit.ng/assets/kitng-social.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[
-{"@type":"WebSite","name":"kit.ng","url":"https://kit.ng/","about":{"@id":"https://kit.ng/#person"},"sameAs":["https://kitar.co/","https://kita.co/","https://ordinarykind.com/"]},
-{"@type":"Person","@id":"https://kit.ng/#person","name":"Kit Ng","url":"https://kit.ng/","sameAs":["https://kitar.co/","https://kita.co/","https://x.com/oxkitng","https://www.linkedin.com/in/sleepkit","https://medium.com/@kitngyj"],"jobTitle":"Trader and Founder","worksFor":[{"@type":"Organization","name":"KITA","url":"https://kita.co/"},{"@type":"Organization","name":"kitaR","url":"https://kitar.co/"},{"@type":"Organization","name":"Ordinary Kind Pte Ltd","url":"https://ordinarykind.com/"}]}
-]}
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"kit.ng","url":"https://kit.ng/","about":{"@id":"https://kit.ng/#person"},"sameAs":["https://linkedin.com/in/oxkit","https://x.com/oxkitng"]},{"@type":"Person","@id":"https://kit.ng/#person","name":"Kit Ng","url":"https://kit.ng/","sameAs":["https://linkedin.com/in/oxkit","https://x.com/oxkitng"],"jobTitle":"Trader and Founder","worksFor":[{"@type":"Organization","name":"KITA","url":"https://kita.co/"},{"@type":"Organization","name":"kitaR","url":"https://kitar.co/"},{"@type":"Organization","name":"Ordinary Kind Pte Ltd","url":"https://ordinarykind.com/"}]}]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -115,10 +112,7 @@ a{color:var(--gold-300);text-decoration:none}
 .rail .q{margin-top:4px}
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px;max-width:640px}
 .rail .duo{grid-template-columns:1fr;max-width:none;margin-top:18px}
-.duo a{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:6px;background:linear-gradient(160deg,rgba(60,54,80,.9),rgba(52,46,70,.9));border:1px solid var(--purple-700);border-radius:var(--radius-lg);padding:20px;transition:border-color .25s,box-shadow .25s;will-change:transform}
-.duo a:hover{border-color:var(--gold-600);box-shadow:0 14px 30px rgba(10,7,20,.4),0 0 0 1px rgba(200,169,122,.25)}
-.duo a::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(239,228,210,.14),transparent);transform:skewX(-18deg);transition:left .6s var(--ease-standard)}
-.duo a:hover::after{left:130%}
+.duo>div{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:6px;background:linear-gradient(160deg,rgba(60,54,80,.9),rgba(52,46,70,.9));border:1px solid var(--purple-700);border-radius:var(--radius-lg);padding:20px;transition:border-color .25s,box-shadow .25s;will-change:transform}
 .duo .t{font-size:16px;font-weight:700;color:#fff}
 .duo .s{font-size:12.5px;color:var(--purple-200);line-height:1.55}
 
@@ -137,7 +131,7 @@ a{color:var(--gold-300);text-decoration:none}
 /* ---------- career links ---------- */
 .sec{font-family:var(--font-mono);font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-300);opacity:0;transform:translateY(12px);transition:all .7s var(--ease-out-expo)}
 .sec.in{opacity:1;transform:none}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.grid3{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
 .chip{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:linear-gradient(160deg,rgba(60,54,80,.9),rgba(52,46,70,.9));border:1px solid var(--purple-700);border-radius:var(--radius-lg);padding:18px;color:#fff;transition:border-color .25s,box-shadow .25s;will-change:transform;opacity:0;animation:pop .6s var(--ease-out-expo) forwards;min-height:44px}
 @keyframes pop{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
 .chip:hover{border-color:var(--gold-600);box-shadow:0 12px 26px rgba(10,7,20,.38),0 0 0 1px rgba(200,169,122,.22);color:#fff}
@@ -176,7 +170,7 @@ a{color:var(--gold-300);text-decoration:none}
  .chapter .kicker::after{transform:scaleX(1);transition:none}
  .tagline .cursor,.tape .rail,.aurora i,.cue .line::after,.status .dotp{animation:none !important}
  .chip{animation:none;opacity:1}
- .duo a,.chip,.qcard{transition:none}
+ .duo>div,.chip,.qcard{transition:none}
  .qcard:hover{transform:none !important}
  #spot{display:none}
 }
@@ -193,7 +187,7 @@ a{color:var(--gold-300);text-decoration:none}
 <h1>kit<em>.ng</em></h1>
 <div class="rule"></div>
 <p class="tagline"><span id="type"></span><span class="cursor"></span></p>
-<span class="status closed" id="mkt"><span class="dotp"></span><span id="mktTxt">MARKET CLOSED · Zz</span></span>
+<span class="status closed" id="mkt"><span class="dotp"></span><span id="mktTxt">MARKET CLOSED &#183; Zz</span></span>
 <a class="cue" href="#story"><span>scroll</span><span class="line"></span></a>
 </header>
 
@@ -203,7 +197,7 @@ a{color:var(--gold-300);text-decoration:none}
 <div class="chapter">
 <div class="num rev" aria-hidden="true">01</div>
 <div class="body">
-<div class="kicker rev">Trader Kit · co-quant</div>
+<div class="kicker rev">Trader Kit &#183; co-quant</div>
 <h2 class="rev">I trade the deep sea, <em>in public</em>.</h2>
 <div class="cols">
 <div class="prose">
@@ -212,8 +206,8 @@ a{color:var(--gold-300);text-decoration:none}
 <aside class="rail">
 <div class="q rev">"the ocean doesn't care if you're right."</div>
 <div class="duo rev">
-<a href="https://kitar.co" target="_blank" rel="noopener noreferrer"><span class="t">kitaR</span><span class="s">Trading blueprint with live P&amp;L, fully transparent</span></a>
-<a href="https://kitar.co/fresh.html" target="_blank" rel="noopener noreferrer"><span class="t">FRESH</span><span class="s">Trading operations platform: research, execution, strategy</span></a>
+<div><span class="t">kitaR</span><span class="s">Trading blueprint with live P&amp;L, fully transparent</span></div>
+<div><span class="t">FRESH</span><span class="s">Trading operations platform: research, execution, strategy</span></div>
 </div>
 </aside>
 </div>
@@ -223,7 +217,7 @@ a{color:var(--gold-300);text-decoration:none}
 <div class="chapter">
 <div class="num rev" aria-hidden="true">02</div>
 <div class="body">
-<div class="kicker rev">Sleep Kit · KITA</div>
+<div class="kicker rev">Sleep Kit &#183; KITA</div>
 <h2 class="rev">Your edge is built the <em>night before</em>.</h2>
 <div class="cols">
 <div class="prose">
@@ -232,7 +226,7 @@ a{color:var(--gold-300);text-decoration:none}
 <aside class="rail">
 <div class="q rev">"sleep is not rest. sleep is risk management."</div>
 <div class="duo rev">
-<a href="https://kita.co" target="_blank" rel="noopener noreferrer"><span class="t">KITA</span><span class="s">Firm beds for Singapore and Malaysia</span></a>
+<div><span class="t">KITA</span><span class="s">Firm beds for Singapore and Malaysia</span></div>
 </div>
 </aside>
 </div>
@@ -242,7 +236,7 @@ a{color:var(--gold-300);text-decoration:none}
 <div class="chapter">
 <div class="num rev" aria-hidden="true">03</div>
 <div class="body">
-<div class="kicker rev">Daddy Kit · Happy Kind</div>
+<div class="kicker rev">Daddy Kit &#183; Happy Kind</div>
 <h2 class="rev">The two titles that <em>outrank</em> trader.</h2>
 <div class="cols">
 <div class="prose">
@@ -251,8 +245,8 @@ a{color:var(--gold-300);text-decoration:none}
 <aside class="rail">
 <div class="q rev">"kindness, compounded daily."</div>
 <div class="duo rev">
-<a href="https://happykind.co" target="_blank" rel="noopener noreferrer"><span class="t">Happy Kind Giving</span><span class="s">Giving, made a family habit</span></a>
-<a href="https://happykindkiddo.com" target="_blank" rel="noopener noreferrer"><span class="t">Happy Kind Kiddo</span><span class="s">Raising kind humans, on purpose</span></a>
+<div><span class="t">Happy Kind Giving</span><span class="s">Giving, made a family habit</span></div>
+<div><span class="t">Happy Kind Kiddo</span><span class="s">Raising kind humans, on purpose</span></div>
 </div>
 </aside>
 </div>
@@ -272,18 +266,13 @@ a{color:var(--gold-300);text-decoration:none}
 <div class="chapter" style="margin-top:88px">
 <div class="num rev" aria-hidden="true">04</div>
 <div class="body">
-<div class="kicker rev">Career Kit · paper trail</div>
+<div class="kicker rev">Career Kit &#183; paper trail</div>
 <h2 class="rev">For recruiters and <em>collaborators</em>.</h2>
 <div class="cols single">
-<p class="rev">The conventional career artifacts, kept in one place. Writing on markets, systems, and building in public lives on Medium.</p>
+<p class="rev">Find my professional timeline on LinkedIn and follow the live tape on X.</p>
 <div class="grid3" style="margin-top:24px">
-<a class="chip" style="animation-delay:0ms" href="https://www.linkedin.com/in/sleepkit" target="_blank" rel="noopener noreferrer"><span class="arrow">→</span><span class="t">LinkedIn</span><span class="s">The professional timeline</span></a>
-<a class="chip" style="animation-delay:55ms" href="https://medium.com/@kitngyj" target="_blank" rel="noopener noreferrer"><span class="arrow">→</span><span class="t">Medium</span><span class="s">Writing on markets and systems</span></a>
-<a class="chip" style="animation-delay:110ms" href="https://drive.google.com/file/d/144MvIN2veIHOwN82z68OWXsxrmb8WaYa/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span class="arrow">→</span><span class="t">One Page Resume</span><span class="s">The sixty-second version</span></a>
-<a class="chip" style="animation-delay:165ms" href="https://drive.google.com/file/d/116YmXaasPjXClHdZa7hw91xyU2_V_rrJ/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span class="arrow">→</span><span class="t">Curriculum Vitae</span><span class="s">The full record</span></a>
-<a class="chip" style="animation-delay:220ms" href="https://drive.google.com/file/d/1TGJFqur9dBo368luqR2vJfN6iDolGTKT/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span class="arrow">→</span><span class="t">Career Portfolio</span><span class="s">Selected work</span></a>
-<a class="chip" style="animation-delay:275ms" href="https://www.slideshare.net/YeeJieNg" target="_blank" rel="noopener noreferrer"><span class="arrow">→</span><span class="t">SlideShare</span><span class="s">Decks and presentations</span></a>
-<a class="chip" style="animation-delay:330ms" href="https://x.com/oxkitng" target="_blank" rel="noopener noreferrer"><span class="arrow">→</span><span class="t">@oxkitng</span><span class="s">The live tape, on X</span></a>
+<a class="chip" style="animation-delay:0ms" href="https://linkedin.com/in/oxkit" target="_blank" rel="noopener noreferrer"><span class="arrow">&#8594;</span><span class="t">LinkedIn</span><span class="s">The professional timeline</span></a>
+<a class="chip" style="animation-delay:55ms" href="https://x.com/oxkitng" target="_blank" rel="noopener noreferrer"><span class="arrow">&#8594;</span><span class="t">@oxkitng</span><span class="s">The live tape, on X</span></a>
 </div>
 </div>
 </div>
@@ -303,15 +292,15 @@ a{color:var(--gold-300);text-decoration:none}
   <p id="contact-privacy" class="ox-contact-note">Your details and message will be emailed to ox@kit.ng so we can reply. Phone is optional. Please leave out sensitive information.</p>
   <button type="submit" disabled>Send message</button>
   <p data-contact-status class="ox-contact-status" role="status" aria-live="polite" tabindex="-1">Preparing the form...</p>
-  <noscript><p>Please email <a href="mailto:ox@kit.ng">ox@kit.ng</a> to get in touch.</p></noscript>
+  <noscript><p>Please email ox@kit.ng to get in touch.</p></noscript>
 </form>
-<p class="ox-contact-direct">Prefer email? <a href="mailto:ox@kit.ng">ox@kit.ng</a></p>
+<p class="ox-contact-direct">Prefer email? ox@kit.ng</p>
 </section>
 
 <div class="doorways">
 <p class="lead">kit.ng is the front door. <b>kitar.co</b> is the trading room, <b>kita.co</b> is the bedroom, and <b>ordinarykind.com</b> is the roof over all of it.</p>
 </div>
-<div class="foot">© 2026 Kit Ng · founder, Ordinary Kind Pte Ltd, Singapore · <a href="https://ordinarykind.com" target="_blank" rel="noopener noreferrer">ordinarykind.com</a> · <a href="https://x.com/oxkitng" target="_blank" rel="noopener noreferrer">@oxkitng</a></div>
+<div class="foot">&#169; 2026 Kit Ng &#183; founder, Ordinary Kind Pte Ltd, Singapore &#183; ordinarykind.com &#183; <a href="https://x.com/oxkitng" target="_blank" rel="noopener noreferrer">@oxkitng</a></div>
 </div>
 </main>
 
@@ -350,7 +339,7 @@ if(reduceMotion){
   const open=n&&['Mon','Tue','Wed','Thu','Fri'].indexOf(n.wd)>=0&&n.mins>=570&&n.mins<960;
   pill.classList.toggle('open',!!open);
   pill.classList.toggle('closed',!open);
-  txt.textContent=open?'MARKET OPEN · NYSE':'MARKET CLOSED · Zz';
+  txt.textContent=open?'MARKET OPEN \u00b7 NYSE':'MARKET CLOSED \u00b7 Zz';
  }
  upd();setInterval(upd,60000);
 })();
